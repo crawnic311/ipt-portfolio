@@ -1,0 +1,423 @@
+.App {
+  color: aliceblue;
+  line-height: 1.6;
+}
+
+.Gradient-Wrapper-AboutMe {
+  background: linear-gradient(364deg, #004148 20%, transparent 0%);
+  background-color: #1c6d73;
+}
+.Gradient-Wrapper-Skills {
+  background: linear-gradient(355deg, #01565d 20%, #004148 1%);
+}
+
+.Gradient-Wrapper-Projects {
+  background: linear-gradient(365deg, transparent 20%, #01565d 1%);
+}
+
+@media screen and (min-width: 1280px) {
+  .BG-Image {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.App-Headline-Section {
+  text-align: center;
+  height: 190px;
+  padding: 192px 48px 348px 68px;
+  background: linear-gradient(354deg, #1c6d73 20%, transparent 0%);
+}
+
+@media screen and (max-width: 1280px) {
+  .BG-Image {
+    display: none;
+  }
+  #Headline-BG-Image {
+    background-image: url(/src/bg-images/Banff\ 45\ OP.jpg);
+    background-size: cover;
+    background-position: 50%, 50%;
+    z-index: 199;
+  }
+  .Gradient-Wrapper-Projects {
+    background: linear-gradient(365deg, transparent 0%, #01565d 0%);
+  }
+}
+
+.App-AboutMe-Section {
+  height: 420px;
+  width: 65vw;
+  padding: 0px 48px 76px 48px;
+  margin: auto;
+}
+
+.About-Me-Icon {
+  width: 240px;
+  height: 240px;
+  float: right;
+  padding-left: 60px;
+}
+
+.App-Skills-Section {
+  height: 680px;
+  width: 65vw;
+  padding: 48px 48px 16px 48px;
+  margin: auto;
+}
+
+.App-Projects-Section {
+  height: 880px;
+  width: 65vw;
+  padding: 48px 48px 86px 48px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-Projects-Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-Contact-Section {
+  height: 580px;
+  width: 65vw;
+  padding: 48px 48px 16px 48px;
+  margin: auto;
+}
+
+.Headline-Menu {
+  text-align: right;
+  width: 100vw;
+  height: 30px;
+  padding: 25px 0px 20px 0px;
+  position: fixed;
+  z-index: 10;
+}
+
+.Logo {
+  height: 40px;
+  width: 40px;
+  background-image: url('../public/DCLogo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aliceblue;
+  z-index: 1000;
+  border-radius: 50px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+
+.Menu {
+  margin-right: 20px;
+  padding: 9px 12px;
+  border: lightblue 1.5px solid;
+  border-radius: 5px;
+}
+
+.Menu:hover {
+  background-color: hsl(0deg 0% 100% / 13%);
+  transition: 0.2s;
+}
+
+.Menu-Text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  padding-right: 10px;
+  letter-spacing: 0.05em;
+}
+
+.Headline-Component {
+  display: inline-block;
+  text-align: left;
+}
+
+.Headline-Name {
+  font-weight: 800;
+  font-size: 32px;
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+  border-bottom: 2px solid aliceblue;
+  width: 65vw;
+}
+
+.Headline-Title {
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+#AboutMe-Headline-Name {
+  text-align: right;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#Skills-Headline-Name {
+  text-align: right;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.About-Me-Text {
+  text-align: right;
+  font-size: 18px;
+}
+
+.Skill-Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Skills-Flex-Item {
+  text-align: center;
+  width: 160px;
+  display: inline-block;
+  padding-bottom: 60px;
+}
+
+.Skills-Icon {
+  width: 140px;
+  height: 140px;
+}
+
+.Skills-Text {
+  display: inline;
+}
+
+.Projects-Headline {
+  width: 100%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  border-bottom: 2px solid aliceblue;
+}
+
+.Project {
+  background-color: #1d6c73;
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 400px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project-transition-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.project-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.project-transition-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.project-transition-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 500ms, transform;
+}
+
+.project-transition-reverse-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.project-transition-reverse-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.project-transition-reverse-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.project-transition-reverse-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.Project-Preview {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Link {
+  height: 200px;
+  width: 88%;
+  margin-top: 20px;
+}
+
+.Project-Title {
+  height: 40px;
+  width: 88%;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 10px;
+  border-bottom: 1px solid aliceblue;
+}
+
+.Project-Description {
+  height: 40px;
+  width: 88%;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.Nav-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Nav-Circles {
+  width: 100px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.Circle {
+  background-color: aliceblue;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+#Current {
+  background-color: #004148;
+  border: solid 1px aliceblue;
+  box-shadow: 0px 0px 1px 1px aliceblue;
+  transform: translateY(-1px);
+}
+
+.Nav-Buttons {
+  display: flex;
+}
+
+.Nav {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  margin: auto;
+}
+
+.Nav-Text {
+  background-color: #004148;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 140px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Nav-Text:hover {
+  border: solid 1px aliceblue;
+  box-shadow: 0px 0px 3px 3px aliceblue;
+}
+
+.Nav-Text:active {
+  border: solid 1px aliceblue;
+  box-shadow: none;
+}
+
+.Contact-Headline {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: 2px solid aliceblue;
+}
+
+.Contact-Quip {
+  margin-top: 30px;
+}
+
+.Contact-Line {
+  border: solid transparent 1px;
+  margin-top: 60px;
+}
+
+#Contact-Address {
+  background-color: transparent;
+}
+
+#Contact-Email {
+  background-color: transparent;
+}
+
+.Contact-Buttons-Holder {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Contact-Buttons {
+  background-color: #02555c;
+  height: 52px;
+  width: 140px;
+  cursor: pointer;
+  border: lightblue 1.5px solid;
+  border-radius: 5px;
+}
+
+.Contact-Button-Text {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: aliceblue;
+  letter-spacing: 0.05em;
+}
+
+.Contact-Buttons:hover {
+  background-color: #1c6d73;
+  transition: 0.2s;
+}
+
+/*Drop Down Section */
+
+.More-Content-Section {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.More-Content-Section.open {
+  height: 780px;
+  width: 65vw;
+  padding: 48px 48px 86px 48px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+}
