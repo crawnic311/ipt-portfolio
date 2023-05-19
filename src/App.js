@@ -15,40 +15,41 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: 'Rekishi',
-      image: '/Rekishi Preview.jpeg',
-      link: 'https://www.rekishi.io/',
+      title: 'Microcore',
+      image: '/microcore2.png',
+      link: 'https://pcs.byu.edu/',
       description:
-        'An up-and-coming community for all things Anime and Comics!',
-      info: `I'm building this web app using react.js node.js and firebase. It's still in production but feel free to take a look around. Login to our test account with these credentials: `,
-      login: 'rekishitester@gmail.com',
-      password: 'rekishi123',
+        'Microcore is an immersive workplace simulation designed to help students develop their technical writing skills.',
+      info: 'I brought a complete and comprehensive redesign to this web based course that is now live at BYU and will service hundreds of students each semester.',
+      login: '',
+      password: '',
     },
     {
       id: 2,
-      title: 'Minesweeper',
-      image: '/Minesweeper Preview.jpeg',
-      link: 'https://minesweeper-1bfe6.web.app/',
-      description: 'My take on the Microsoft classic - Minesweeper.',
-      info: 'Built using pure JavaScript, HTML, CSS, and deployed with Firebase. It features recursive cell revealing and an immersive interface. Give it a go!',
+      title: 'Disaster Discovery Center',
+      image: '/DDC.png',
+      link: 'https://disasterdiscoverycenter.org/',
+      description:
+        'An in person workshop to help individuals and families develop awareness around their emergency preparedness.',
+      info: 'I worked with a team to create this workshop that is now used on college campuses across the US to help students experience and prepare for the challenges of natural disasters in their area.',
     },
     {
       id: 3,
-      title: 'StealthScribe',
-      image: '/StealthScribe Preview.jpeg',
-      link: 'https://minesweeper-1bfe6.web.app/',
+      title: 'Doko Recycling',
+      image: '/doko.jpg',
+      link: 'https://dokorecyclers.com/',
       description:
-        'StealthScribe is an anonymous platform for classrooms of all kinds, facilitating confidential sharing of answers and fostering open expression of thoughts and ideas.',
-      info: '',
+        'A public school curriculum developer for students throughout Kathmandu, Nepal learn all about recycling.',
+      info: 'I lead a team of locals and humanitarian volunteers to develop this comprehensive high school curriculum for the NGO Doko Recyclers in Kathmandu, Nepal.',
     },
     {
       id: 4,
-      title: 'Foody',
-      image: '/Foody Preview.jpg',
-      link: 'https://foody-authentication.firebaseapp.com/',
+      title: 'Handyman Training',
+      image: '/Handyman.jpg',
+      link: '',
       description:
-        'Foody is your quick, easy, and convenient place to store all of your favorite recipes!',
-      info: '',
+        'A simple online presentation and course designed to help anyone get their general handyman business started.',
+      info: 'I created this course in both adobe captivate and articulate storyline 360. It features audio and vidual presentation, mini-tests, and gamified learning.',
     },
   ]
 

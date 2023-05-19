@@ -4,8 +4,9 @@ const Contact = () => {
   return (
     <div>
       <p className="Contact-Quip">
-        I'm like MacGyver, just without the mullet, and specifically for full
-        stack development, not henchmen and evil masterminds.{' '}
+        Let's connect and collaborate to create impactful learning experiences.
+        Reach out to discuss how we can design engaging e-learning solutions
+        tailored to your needs.{' '}
       </p>
       <div className="Contact-Line" id="Contact-Address">
         Orem, UT 84057
