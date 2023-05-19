@@ -44,12 +44,28 @@ function App() {
     },
     {
       id: 4,
+      title: '50 Years of Education Research',
+      image: '/50years.png',
+      link: 'https://open.byu.edu/50_years',
+      description: '',
+      info: '',
+    },
+    {
+      id: 5,
       title: 'Handyman Training',
       image: '/Handyman.jpg',
       link: '',
       description:
         'A simple online presentation and course designed to help anyone get their general handyman business started.',
       info: 'I created this course in both adobe captivate and articulate storyline 360. It features audio and vidual presentation, mini-tests, and gamified learning.',
+    },
+    {
+      id: 6,
+      title: 'Minesweeper',
+      image: '/Minesweeper Preview.jpeg',
+      link: 'https://minesweeper-1bfe6.web.app/',
+      description: 'My take on the Microsoft classic - Minesweeper.',
+      info: 'Built using pure JavaScript, HTML, CSS, and deployed with Firebase. It features recursive cell revealing and an immersive interface. Give it a go!',
     },
   ]
 
