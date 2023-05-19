@@ -4,18 +4,18 @@ const AboutMe = () => {
   return (
     <div className="About-Me-Text">
       <img
-        src={require('../../section-icons/WebDev Icon.png')}
+        src={require('../../section-icons/eLearning.png')}
         alt=""
         className="About-Me-Icon"
       />
-      It's no secret that I love to learn and push myself. After a few years
-      working in operations I knew it was time for a new challenge. I followed
-      my intuition and enrolled in a web dev bootcamp. Since then I have been
-      enjoying bringing my creative ideas into exisistence.
+      I am an experienced instructional designer who specializes in creating
+      engaging, learner-centered e-learning experiences and multimedia
+      presentations, leveraging innovative strategies to empower individuals and
+      drive transformative learning experiences that yield meaningful outcomes.
       <br></br>
-      <br></br>I like the outdoors, the indoors, excellent foods, and keeping up
-      with each new installment of the Legend of Zelda series. I've lived all
-      over the US but the Utah mountains have convinced me to stay put for now.
+      <br></br>I like the outdoors, the indoors, excellent foods, and travelling
+      the world as often as I can. I've lived all over the US but the Utah
+      mountains have convinced me to stay put for now.
     </div>
   )
 }

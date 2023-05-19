@@ -181,6 +181,7 @@
 .Skills-Flex-Item {
   text-align: center;
   width: 160px;
+  padding: 0px 15px;
   display: inline-block;
   padding-bottom: 60px;
 }

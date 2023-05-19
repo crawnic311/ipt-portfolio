@@ -5,7 +5,7 @@ const Headline = () => {
     <div className="Headline-Component">
       <div className="Headline-Name">Dillon Craw</div>
 
-      <div className="Headline-Title">Full Stack Web Developer</div>
+      <div className="Headline-Title">Instructional Design Portfolio</div>
     </div>
   )
 }

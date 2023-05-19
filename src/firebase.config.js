@@ -2,14 +2,14 @@ import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDQCpyXiUslUsnPNIICtb7GXp6KSyapPUY',
-  authDomain: 'fullstack-portfolio-5c2aa.firebaseapp.com',
-  projectId: 'fullstack-portfolio-5c2aa',
-  storageBucket: 'fullstack-portfolio-5c2aa.appspot.com',
-  messagingSenderId: '204669302516',
-  appId: '1:204669302516:web:e95794453582e4ca2ed0a1',
-  measurementId: 'G-3QTLEDDTBS',
+  apiKey: 'AIzaSyCNWn35P8FNN7m6l_vhuWovc1sz_areTPI',
+  authDomain: 'ipt-portfolio.firebaseapp.com',
+  projectId: 'ipt-portfolio',
+  storageBucket: 'ipt-portfolio.appspot.com',
+  messagingSenderId: '718770521429',
+  appId: '1:718770521429:web:69f74c8c3c2c616e939bdc',
+  measurementId: 'G-7D3PYG78V1',
 }
 
-export const app = initializeApp(firebaseConfig)
-export const analytics = getAnalytics(app)
+const app = initializeApp(firebaseConfig)
+const analytics = getAnalytics(app)

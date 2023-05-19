@@ -5,27 +5,43 @@ const Skills = () => {
     <div className="Skill-Container">
       <div className="Skills-Flex-Item">
         <img
+          src={require('../../skills-icons/articulate.webp')}
+          alt=""
+          className="Skills-Icon"
+        />
+        <p className="Skills-Text">Storyline 360</p>
+      </div>
+      <div className="Skills-Flex-Item">
+        <img
+          src={require('../../skills-icons/Adobe-Captivate.png')}
+          alt=""
+          className="Skills-Icon"
+        />
+        <p className="Skills-Text">Captivate</p>
+      </div>
+      <div className="Skills-Flex-Item">
+        <img
+          src={require('../../skills-icons/Adobe_Photoshop.png')}
+          alt=""
+          className="Skills-Icon"
+        />
+        <p className="Skills-Text">Photoshop</p>
+      </div>
+      <div className="Skills-Flex-Item">
+        <img
+          src={require('../../skills-icons/Adobe-Illustrator.png')}
+          alt=""
+          className="Skills-Icon"
+        />
+        <p className="Skills-Text">Illustrator</p>
+      </div>
+      <div className="Skills-Flex-Item">
+        <img
           src={require('../../skills-icons/JavaScript Icon.png')}
           alt=""
           className="Skills-Icon"
         />
-        <p className="Skills-Text">JavaScript</p>
-      </div>
-      <div className="Skills-Flex-Item">
-        <img
-          src={require('../../skills-icons/React Icon.png')}
-          alt=""
-          className="Skills-Icon"
-        />
-        <p className="Skills-Text">React</p>
-      </div>
-      <div className="Skills-Flex-Item">
-        <img
-          src={require('../../skills-icons/Redux Icon.png')}
-          alt=""
-          className="Skills-Icon"
-        />
-        <p className="Skills-Text">Redux</p>
+        <p className="Skills-Text">Javascript</p>
       </div>
       <div className="Skills-Flex-Item">
         <img
@@ -42,46 +58,6 @@ const Skills = () => {
           className="Skills-Icon"
         />
         <p className="Skills-Text">CSS</p>
-      </div>
-      <div className="Skills-Flex-Item">
-        <img
-          src={require('../../skills-icons/Express Icon.png')}
-          alt=""
-          className="Skills-Icon"
-        />
-        <p className="Skills-Text">Express</p>
-      </div>
-      <div className="Skills-Flex-Item">
-        <img
-          src={require('../../skills-icons/PostgreSQL Icon.png')}
-          alt=""
-          className="Skills-Icon"
-        />
-        <p className="Skills-Text">PostgreSQL</p>
-      </div>
-      <div className="Skills-Flex-Item">
-        <img
-          src={require('../../skills-icons/Node Icon.png')}
-          alt=""
-          className="Skills-Icon"
-        />
-        <p className="Skills-Text">Node</p>
-      </div>
-      <div className="Skills-Flex-Item">
-        <img
-          src={require('../../skills-icons/C++ Icon.png')}
-          alt=""
-          className="Skills-Icon"
-        />
-        <p className="Skills-Text">C++</p>
-      </div>
-      <div className="Skills-Flex-Item">
-        <img
-          src={require('../../skills-icons/Firebase Icon.png')}
-          alt=""
-          className="Skills-Icon"
-        />
-        <p className="Skills-Text">Firebase</p>
       </div>
     </div>
   )
