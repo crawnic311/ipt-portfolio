@@ -47,8 +47,9 @@ function App() {
       title: '50 Years of Education Research',
       image: '/50years.png',
       link: 'https://open.byu.edu/50_years',
-      description: '',
-      info: '',
+      description:
+        'The publication is an open education resource synthesizing the past 50 years of research in the education and technology.',
+      info: 'I wrote the chapter on Educational Technology in the 1980 decade and was heavily involved in the reviewing, editing, and writing of the rest of the Educational Technology section.  ',
     },
     {
       id: 5,
