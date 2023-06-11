@@ -19,6 +19,8 @@ function App() {
   useEffect(() => {
     if (isMenuOpen === true) {
       setMenuScreen('Menu-Screen')
+    } else {
+      setMenuScreen('')
     }
   }, [isMenuOpen])
 
@@ -81,12 +83,11 @@ function App() {
   ]
 
   return (
-    <div className="App">
+    <div className="App" id="headline">
       <div
         className={menuScreen}
         onClick={() => {
           setIsMenuOpen(false)
-          setMenuScreen('')
         }}
       />
       <img

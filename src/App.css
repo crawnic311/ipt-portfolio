@@ -17,6 +17,7 @@
 
 .Menu-Modal {
   display: flex;
+  background-color: #1d6c73;
   align-items: center;
   justify-content: center;
   height: 400px;
@@ -25,12 +26,48 @@
   position: fixed;
   top: 20%;
   left: 50%;
+  transform: translateY(0.5em);
+  transition: opacity 0.35s ease, transform 0.35s ease,
+    -webkit-transform 0.35s ease;
+  -webkit-overflow-scrolling: touch;
   transform: translate(-50%, 0);
-  border: solid red 1px;
+  z-index: 1;
+
+  border-radius: 5px;
+}
+
+.Inner-Pop-Menu {
+  height: 350px;
+}
+
+.Menu-Title {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid silver;
 }
 
 .Links {
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
   list-style-type: none;
+}
+
+li > a {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 240px;
+  text-decoration: none;
+}
+
+li > a:hover {
+  background-color: #004148;
+  border-radius: 5px;
 }
 
 .Gradient-Wrapper-AboutMe {
@@ -126,6 +163,7 @@
   height: 30px;
   padding: 25px 0px 20px 0px;
   position: fixed;
+  cursor: pointer;
   z-index: 10;
 }
 

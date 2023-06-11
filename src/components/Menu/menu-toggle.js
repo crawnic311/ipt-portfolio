@@ -5,19 +5,22 @@ const MenuToggle = () => {
     <div className="Menu-Is-Visilbe">
       <nav className="Menu-Modal">
         <div className="Inner-Pop-Menu">
-          <h2></h2>
+          <h2 className="Menu-Title">Menu</h2>
           <ul className="Links">
             <li>
-              <a href="#headline">About Me</a>
+              <a href="#headline">Dillon Craw</a>
             </li>
             <li>
               <a href="#aboutMe">About Me</a>
             </li>
             <li>
-              <a href="#skills">About Me</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#contact">About Me</a>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#getInTouch">Get In Touch</a>
             </li>
           </ul>
           <a className="Close"></a>
