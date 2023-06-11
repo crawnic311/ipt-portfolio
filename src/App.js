@@ -18,9 +18,9 @@ function App() {
 
   useEffect(() => {
     if (isMenuOpen === true) {
-      setMenuScreen('Menu-Screen')
+      setMenuScreen('Visible')
     } else {
-      setMenuScreen('')
+      setMenuScreen('Invisible')
     }
   }, [isMenuOpen])
 
@@ -96,7 +96,8 @@ function App() {
         className="BG-Image"
       />
       <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      {isMenuOpen ? <MenuToggle /> : <div></div>}
+      {/* {isMenuOpen ? <MenuToggle menuScreen={menuScreen} /> : <div></div>} */}
+      <MenuToggle menuScreen={menuScreen} />
       <div className="App-Headline-Section" id="Headline-BG-Image">
         <a className="Logo" href=""></a>
         <Headline />
@@ -117,7 +118,6 @@ function App() {
         <div className="App-Projects-Section">
           <ProjectHeadline />
           <div className="App-Projects-Container">
-            {/* <ProjectCarousel projects={projects} /> */}
             <ProjectCarousel projects={projects} />
           </div>
         </div>

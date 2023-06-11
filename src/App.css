@@ -3,7 +3,18 @@
   line-height: 1.6;
 }
 
-.Menu-Screen {
+.Invisible {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  transition: ease-in-out 1s;
+  pointer-events: none;
+}
+
+.Visible {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,9 +24,27 @@
   opacity: 0.4;
   z-index: 0;
   display: flex;
+  transition: ease-in-out 1s;
 }
 
-.Menu-Modal {
+#Invisible {
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 300px;
+  margin: auto;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.6s;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+#Visible {
   display: flex;
   background-color: #1d6c73;
   align-items: center;
@@ -26,14 +55,11 @@
   position: fixed;
   top: 20%;
   left: 50%;
-  transform: translateY(0.5em);
-  transition: opacity 0.35s ease, transform 0.35s ease,
-    -webkit-transform 0.35s ease;
-  -webkit-overflow-scrolling: touch;
-  transform: translate(-50%, 0);
   z-index: 1;
-
   border-radius: 5px;
+  transform: translateX(-50%) translateY(-20px) translateZ(0px);
+  transition: all 0.6s;
+  visibility: visible;
 }
 
 .Inner-Pop-Menu {
@@ -163,7 +189,6 @@ li > a:hover {
   height: 30px;
   padding: 25px 0px 20px 0px;
   position: fixed;
-  cursor: pointer;
   z-index: 10;
 }
 
@@ -186,6 +211,7 @@ li > a:hover {
   padding: 9px 12px;
   border: lightblue 1.5px solid;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .Menu:hover {

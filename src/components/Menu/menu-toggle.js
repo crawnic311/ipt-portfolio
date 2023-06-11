@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MenuToggle = () => {
+const MenuToggle = ({ menuScreen }) => {
   return (
     <div className="Menu-Is-Visilbe">
-      <nav className="Menu-Modal">
+      <nav className="Menu-Modal" id={menuScreen}>
         <div className="Inner-Pop-Menu">
           <h2 className="Menu-Title">Menu</h2>
           <ul className="Links">
