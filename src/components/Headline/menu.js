@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Menu = () => {
+const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
-    <div className="Headline-Menu">
+    <div className="Headline-Menu" onClick={() => setIsMenuOpen(true)}>
       <a className="Menu">
         <span className="Menu-Text">Menu</span>
         <i className="fa-solid fa-bars"></i>

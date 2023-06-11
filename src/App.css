@@ -3,6 +3,36 @@
   line-height: 1.6;
 }
 
+.Menu-Screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 0;
+  display: flex;
+}
+
+.Menu-Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 300px;
+  margin: auto;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: solid red 1px;
+}
+
+.Links {
+  list-style-type: none;
+}
+
 .Gradient-Wrapper-AboutMe {
   background: linear-gradient(364deg, #004148 20%, transparent 0%);
   background-color: #1c6d73;

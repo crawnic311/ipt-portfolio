@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import Headline from './components/Headline/name-position'
 import AboutMe from './components/About-Me/about-me'
@@ -9,9 +9,19 @@ import ContactHeadline from './components/Get-In-Touch/contact-headline'
 import Contact from './components/Get-In-Touch/contact'
 import SkillsHeadline from './components/Skills/skills-headline'
 import Menu from './components/Headline/menu'
+import MenuToggle from './components/Menu/menu-toggle'
 import AboutMeHeadline from './components/About-Me/about-me-headline'
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [menuScreen, setMenuScreen] = useState('')
+
+  useEffect(() => {
+    if (isMenuOpen === true) {
+      setMenuScreen('Menu-Screen')
+    }
+  }, [isMenuOpen])
+
   const projects = [
     {
       id: 1,
@@ -72,12 +82,20 @@ function App() {
 
   return (
     <div className="App">
+      <div
+        className={menuScreen}
+        onClick={() => {
+          setIsMenuOpen(false)
+          setMenuScreen('')
+        }}
+      />
       <img
         src={require('../src/bg-images/Banff 45 OP.jpg')}
         alt=""
         className="BG-Image"
       />
-      <Menu />
+      <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      {isMenuOpen ? <MenuToggle /> : <div></div>}
       <div className="App-Headline-Section" id="Headline-BG-Image">
         <a className="Logo" href=""></a>
         <Headline />
