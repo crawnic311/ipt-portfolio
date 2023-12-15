@@ -29,10 +29,10 @@ function App() {
       id: 1,
       title: 'Microcore',
       image: '/microcore2.png',
-      link: 'https://pcs.byu.edu/',
+      link: 'https://pcs.byu.edu/PcsInfo/16',
       description:
         'Microcore is an immersive workplace simulation designed to help students develop their technical writing skills.',
-      info: 'I brought a complete and comprehensive redesign to this web based course that is now live at BYU and will service hundreds of students each semester.',
+      info: 'As an instructional designer leading its redesign, my role was to refine the learning outcomes for Microcore and align every aspect of the simulation with those outcomes. I created engaging and meaningful activities within the simulation to drive students forward with interest and curiosity toward solving a workplace incident through technical writing. I also designed the activities they participate in throughout the simulation to challenge them to think deeply and ethically about their coworkers and the report they produce involving their stories. All of this while being situation in a professional work environment where students can map out potential career paths and get a first hand feel of a professional work environment. ',
       login: '',
       password: '',
     },

@@ -357,6 +357,14 @@ li > a:hover {
   height: 200px;
   width: 100%;
   border-radius: 5px;
+  border: 2px solid transparent; /* Transparent border initially */
+  box-shadow: 0 0 0 transparent; /* Transparent box shadow initially */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.Project-Preview:hover {
+  border-color: silver; /* Change the color to your preferred border color */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
 .Link {
@@ -375,11 +383,13 @@ li > a:hover {
 }
 
 .Project-Description {
-  height: 40px;
+  height: 280px;
   width: 88%;
   font-size: 20px;
   font-weight: 400;
   padding-top: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .Nav-Container {
