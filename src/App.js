@@ -95,9 +95,9 @@ function App() {
         alt=""
         className="BG-Image"
       />
-      <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      {/* <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
       {/* {isMenuOpen ? <MenuToggle menuScreen={menuScreen} /> : <div></div>} */}
-      <MenuToggle menuScreen={menuScreen} />
+      {/* <MenuToggle menuScreen={menuScreen} /> */}
       <div className="App-Headline-Section" id="Headline-BG-Image">
         <a className="Logo" href=""></a>
         <Headline />
